@@ -11,9 +11,10 @@ Package: libdatetime-event-cron-quartz-perl
 Architecture: all
 Depends: ${misc:Depends}, ${perl:Depends}
 Description: OpensSymphony Quartz cron expression processor
- Documentation is taken from tutorial
+ This module allows specifying cron expressions in Quartz syntax.
+ .
+ see 
  http://www.opensymphony.com/quartz/wikidocs/CronTriggers%20Tutorial.html and
  api javadoc
  http://www.opensymphony.com/quartz/api/org/quartz/CronExpression.html
- .
- This description was automagically extracted from the module by dh-make-perl.
+ for details about Quartz syntax
