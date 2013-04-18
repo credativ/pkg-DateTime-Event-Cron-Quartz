@@ -2,18 +2,27 @@ Source: libdatetime-event-cron-quartz-perl
 Section: perl
 Priority: optional
 Maintainer: Alexander Wirt <alexander.wirt@credativ.de>
-Build-Depends: debhelper (>= 8)
+Build-Depends: debhelper (>= 8),
+               libclass-accessor-perl,
+               libdatetime-perl,
+               libexception-class-perl,
+               libreadonly-perl
 Build-Depends-Indep: perl
 Standards-Version: 3.9.3
 Homepage: http://search.cpan.org/dist/DateTime-Event-Cron-Quartz/
 
 Package: libdatetime-event-cron-quartz-perl
 Architecture: all
-Depends: ${misc:Depends}, ${perl:Depends}
+Depends: libclass-accessor-perl,
+         libdatetime-perl,
+         libexception-class-perl,
+         libreadonly-perl,
+         ${misc:Depends},
+         ${perl:Depends}
 Description: OpensSymphony Quartz cron expression processor
  This module allows specifying cron expressions in Quartz syntax.
  .
- see 
+ see
  http://www.opensymphony.com/quartz/wikidocs/CronTriggers%20Tutorial.html and
  api javadoc
  http://www.opensymphony.com/quartz/api/org/quartz/CronExpression.html
